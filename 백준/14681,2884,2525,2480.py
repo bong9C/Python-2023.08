@@ -49,7 +49,9 @@
 # 3개 주사위의 나온 눈이 주어질 때, 상금을 계산하는 프로그램을 작성 하시오.
 # 입력: 첫째 줄에 3개의 눈이 빈칸을 사이에 두고 각각 주어진다. 
 # 출력: 첫째 줄에 게임의 상금을 출력 한다. 
-dice1, dice2, dice3 =  map(int, input().split())
+
+
+dice1, dice2, dice3 = map(int, input().split())
 if dice1 == dice2 == dice3:
     v = 10000 + dice1 * 1000
 elif dice1 == dice2 or dice1 == dice3:
@@ -60,4 +62,3 @@ else:
      max_val = max([dice1, dice2, dice3])
      v = max_val * 100
 print(v)
-    
