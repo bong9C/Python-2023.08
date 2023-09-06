@@ -23,7 +23,7 @@ class Account:
         if 0 <= balance <= 10000000 :
             self.balance = balance
 
-    def despoit(self, amount):
+    def deposit(self, amount):
         if self.balance + amount > 10000000 :
             print('잔액이 일천만원이 초과 할 수 없습니다. ')
             return
@@ -41,7 +41,7 @@ class Account:
 if __name__ == '__main__':
     acc = Account('230906', '라운희', 100000)
     print(acc)
-    acc.despoit(200000)
+    acc.desposit(200000)
     print(acc)
     acc.withdraw(350000)
     acc.withdraw(250000)
